@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Բողկաստան Սերվեր</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+Armenian:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+	<link rel="icon" type="image/png" href="icon.png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">
+                    <img src="icon.png">
+                    <div class="logo-text">BOXKASTAN <span class="highlight">Future</span></div>
+                </a>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <nav class="nav-links" id="navLinks">
+                    <a href="#home" class="nav-link active">Գլխավոր</a>
+                    <a href="#ip" class="nav-link">IP Հասցե</a>
+                    <a href="#map" class="nav-link">Քարտեզ</a>
+                    <a href="#download" class="nav-link">Ներբեռնում</a>
+                    <a href="#social" class="nav-link">Կոնտակտ</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span>BOXKASTAN <span style="color: #424242;">Future</span></span>
+                </h1>
+                <p class="hero-subtitle noto-armenian">
+                    «ԲՈՂԿ» Յութուբ ալիքի համայնքի մոդերով Minecraft սերվեր
+                </p>
+
+                <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 40px;">
+                    <a href="#ip" class="btn btn-primary">
+                        <i class="fas fa-play-circle"></i>
+                        Միանալ սերվերին
+                    </a>
+                    <a href="#download" class="btn btn-primary" style="background-color: #333; border: 1px solid #333;">
+                        <i class="fas fa-download"></i>
+                        Ներբեռնել մոդերը
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IP Section -->
+    <section class="ip-section" id="ip">
+        <div class="container">
+            <div class="ip-container">
+                <div class="ip-label noto-armenian">Սերվերի IP հասցե</div>
+                <div class="ip-address" id="ipAddress">
+                    <span>boxk.mcserv.fun</span>
+                    <button class="copy-btn" id="copyBtn" title="Պատճենել">
+                        <i class="far fa-copy"></i>
+                    </button>
+                </div>
+                <p class="noto-armenian" style="color: var(--gray-light); max-width: 600px; margin-bottom: 20px;">
+                    Օգտագործեք այս IP-ն Minecraft-ում՝ սերվերին միանալու համար
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section" id="map">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title noto-armenian">Օնլայն քարտեզ</h2>
+                <p class="section-subtitle noto-armenian">
+                    Հետևեք անցուդարձին, ուսումնասիրեք տեղանքը կամ ուղղակի հիացեք Բողկաստանով՝ այս օնլայն real-time քարտեզով
+                </p>
+            </div>
+
+            <div class="map-container">
+                <iframe src="http://boxk.mcserv.fun:9233/?worldname=world_boxkastan" class="map-frame" title="BOHK Server Map"></iframe>
+            </div>
+
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="http://boxk.mcserv.fun:9233/?worldname=world_boxkastan" target="_blank" class="btn btn-primary" style="background-color: #333; border: 1px solid #333;">
+                    <i class="fas fa-external-link-alt"></i>
+                    Բացել քարտեզը
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="download-section" id="download">
+        <div class="container">
+            <div class="download-card">
+                <div class="download-icon">
+                    <i class="fas fa-file-archive"></i>
+                </div>
+                <h2 class="download-title noto-armenian">Ներբեռնեք մոդերը</h2>
+                <p class="download-desc noto-armenian">
+                    ԲՈՂԿ սերվերում խաղալու համար անհրաժեշտ է ներբեռնել հատուկ հավաքածուն։ Այն ներառում է բոլոր անհրաժեշտ մոդերը, տեքստուրաները և կարգավորումները։
+                </p>
+
+                <div class="download-meta">
+                    <div class="meta-item">
+                        <div class="meta-label noto-armenian">Չափը</div>
+                        <div class="meta-value">260 MB</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label noto-armenian">Թարմացում</div>
+                        <div class="meta-value">19․11․2025</div>
+                    </div>
+               <div class="meta-item">
+                        <div class="meta-label noto-armenian">Խաղի վերսիա</div>
+                        <div class="meta-value">1.12.2 Forge</div>
+                    </div>
+                </div>
+
+                <a href="https://drive.google.com/uc?export=download&id=10biEGc7Jm-g2vqVxjqUIm0yxf7gnEo2Q" class="btn btn-primary" style="padding: 20px 50px; font-size: 18px;">
+                    <i class="fas fa-download"></i>
+                    Ներբեռնել
+                </a>
+
+                <p style="margin-top: 30px; color: var(--gray-light); font-size: 14px;">
+                    <i class="fas fa-info-circle"></i> Ներբեռնելուց հետո տեղադրեք պանակը .minecraft պանակում կամ ձեր instance-ի պանակում։
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Section -->
+    <section class="social-section" id="social">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title noto-armenian">Միացեք մեզ</h2>
+                <p class="section-subtitle noto-armenian">
+					Դիտեք մեզ YouTube-ում՝ եզակի կոնտենտի համար։
+                    <br>Միացեք մեր Discord-ին և Telegram-ին՝ որպեսզի շփվեք և առաջինը տեղեկանաք իրադարձությունների մասին։<br>! Անպայման կկարդաք կանոնները !
+                </p>
+            </div>
+
+            <div class="social-links">
+			<a href="https://youtube.com/@բողկ" target="_blank" class="social-link youtube">
+                    <i class="fab fa-youtube social-icon"></i>
+                    YouTube
+                </a>
+                <a href="https://discord.gg/4JYRTzrN" target="_blank" class="social-link discord">
+                    <i class="fab fa-discord social-icon"></i>
+                    Discord
+                </a>
+                <a href="https://t.me/boxk_chat" target="_blank" class="social-link telegram">
+                    <i class="fab fa-telegram social-icon"></i>
+                    Telegram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-logo">
+                        <img src="icon.png">
+                        <div class="footer-logo-text">BOXKASTAN <span class="highlight">Future</span></div>
+                    </div>
+                    <p class="footer-desc noto-armenian">
+                        «ԲՈՂԿ» Յութուբ ալիքի համայնքի մոդերով Minecraft սերվեր
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="footer-title noto-armenian">Կոնտակտ</h3>
+                    <ul class="footer-links">
+						<li class="footer-link"><a href="https://youtube.com/@բողկ" target="_blank">YouTube</a></li>
+                        <li class="footer-link"><a href="https://discord.gg/4JYRTzrN" target="_blank">Discord</a></li>
+                        <li class="footer-link"><a href="https://t.me/boxk_chat" target="_blank">Telegram</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                © 2025 ԲՈՂԿ. Բոլոր իրավունքները մթամ պաշտպանված են
+            </div>
+        </div>
+    </footer>
+
+    <!-- Notification -->
+    <div class="notification" id="copy-notification">
+        <i class="fas fa-check-circle"></i>
+        IP-ն պատճենվեց։ Մալադեց, դե մտի
+    </div>
+</body>
+</html>
