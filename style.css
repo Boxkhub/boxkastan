@@ -278,7 +278,7 @@ body {
 	overflow: hidden;
 	box-shadow: var(--shadow);
 	border: 1px solid var(--border);
-	height: 500px;
+	height: 840px;
 	position: relative;
 }
 
@@ -567,4 +567,5 @@ body {
 	html {
 		scroll-padding-top: 60px;
 	}
+
 }
